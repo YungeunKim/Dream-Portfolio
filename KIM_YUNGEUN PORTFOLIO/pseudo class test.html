@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상클래스</title>
+    <style>
+        .box div {
+            width: 200px;
+            height: 200px;
+            border:2px solid black;
+            float:left;
+            margin: 10px; 
+        }
+        .box div:first-child {
+            background-color:dodgerblue;
+        }
+        .box div:last-child {
+            background-color: orange;
+        }
+        .box div:nth-child(2) {
+            background-color:red;
+        }
+        .box div:nth-child(3) {
+            background-color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+</body>
+</html>

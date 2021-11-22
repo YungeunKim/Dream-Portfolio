@@ -5,56 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM_YUNGEUN PORTFOLIO</title>
-    <style>
+    <style>@font-face {
+        font-family: 'Eulyoo1945-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+
+       p {
+           font-size: 20px;
+       }
+
+        a { 
+            text-decoration:none;
+            color:white; }
+
+        body { 
+            margin: 0; 
+        }
 
         .menubar {
-            display: inline;
-            margin:60px;
-            padding:10px
+            background-color:gray;
+            display: flex;
+            flex-direction: row;
+            
         }
 
         .LOGO {
-            display: inline;
-            margin:100px;
-            padding:10px
+            flex: 4;
+            margin-right: 30px;
+            margin-left: 30px;
         }
 
-        #big4CenterThingy {
-            background-color:gray;
-            padding: 15px
+        .LOGO {
+            font-family:'Eulyoo1945-Regular';
         }
+
+        .item {
+            flex: 0.5;
+        }
+
         h2 {
-            color: white;
+            color:white;
         } 
 
-        {
+        /* {
             background-image : url('');
 
-        }
+        } */
 
     </style>
 </head>
 <body>
     
+    <div class="menubar">
 
+            <h2 class="LOGO">KIM_YUNGEUN</h2>
 
-    <div id="big4CenterThingy">
-        <center>
-            <h2 class="menubar">Kim_Yungeun</h2>
+            <p class="item"><a href="https://www.google.co.kr/">PROFILE</a></p>
 
-            <a href="https://www.google.co.kr/"><h2 class="menubar">PROFILE</h2></a>
+            <p class="item"><a href="https://www.naver.co.kr/">PROJECT</a></p>
 
-            <a href="https://www.naver.co.kr/"><h2 class="menubar">PROJECT</h2></a>
+            <p class="item"><a href="https://www.naver.co.kr/">READING</a></p>
 
-            <h2 class="menubar">READING</h2>
+            <p class="item"><a href="https://www.naver.co.kr/">PHOTO</a></p>
 
-            <h2 class="menubar">PHOTO</h2>
-
-        </center>
 
     </div>
 
-    <center><img src="./mainpicture.png"style="width:1800px; height:900px;"/></center>
+    <!-- <center><img src="./mainpicture.png"style="width:1800px; height:900px;"/></center> -->
     
 </body>
 </html>
