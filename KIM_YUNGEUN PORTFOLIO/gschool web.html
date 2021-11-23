@@ -11,14 +11,14 @@
     .nanumgothic * {
      font-family: 'Nanum Gothic', sans-serif;
     }
-
-p {
-    font-size:27px; 
+a{
+    text-decoration: none;
+    background-color: white;
 }
 
 .maintitle{
     font-family: 'Nanum Gothic';
-    width: 500;
+    font-size: 27px;
 }
 
 .menubal{
@@ -47,12 +47,19 @@ p {
 
 .ddd {
     display:flex;
-    margin:-180px;
+    margin:-250px;
+    font-size:16px;
+    /* text-decoration: none; */
+    color: black;
 }
 
-span:hover { 
+a:hover { 
     color:midnightblue; 
     text-decoration: none;
+}
+
+span {
+    font-size: 15px;
 }
 
 .MV{
@@ -61,43 +68,74 @@ span:hover {
 }
 
 .VB{
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 550px;
-  overflow: hidden;
+     display: flex;
+     align-items: center;
+     width: 100vw;
+     height: 550px;
+     overflow: hidden;
 }
 
 a {
-    background-color: midnightblue;
-    display: flex;
-    flex-direction: column;
-    margin:0px;
+     display: flex;
+     flex-direction: column;
+     margin:0px;
 }
 
 a{
-    color: white;
-    font-size: 14px;
-
+     color: black;
+     font-size: 14px;
 }
 
 .strong{
-    font-size: 16px;
-    background-color: midnightblue;
+      font-size: 16px;
+      background-color: midnightblue;
+}
+
+.box {
+      border: 2px midnightblue;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0px;
+} 
+
+.box div:first-child {
+     background-color: rgb(33, 44, 154);
+     color:white;
+     float: center;
+}
+
+.box div:nth-child(2){
+     background-color: midnightblue;
+     color: white;
+     float: center;
+}
+
+.box div:last-child{
+    background-color: rgb(33, 44, 154);
+    color: white;
+    float: center;
+}
+
+.inbox{
+    width: 346.66px;
+    height: 221.36px;
 }
 
 </style>
 <body>
     <div class="menubal">
 
-        <p class="maintitle">거꾸로캠퍼스</p>
+        <p class="maintitle"><strong>거꾸로캠퍼스</strong></p>
 
-        <span class="ddd"><center>연구 원칙</center></span>
-        <span class="ddd"><center>연구 과정</center></span>
-        <span class="ddd"><center>연구 활동</center></span>
-        <span class="ddd"><center>법인 소식</center></span>
-        <span class="ddd"><center>거꾸로캠퍼스 소개</center></span>
+        <span class="ddd"><a href="https://gschool.kr/principle/">연구 원칙</a></span>
+        <span class="ddd"><a href="https://gschool.kr/principle/">연구 과정</a></span>
+        <span class="ddd"><a href="https://gschool.kr/curriculum/">연구 활동</a></span>
+        <span class="ddd"><a href="https://gschool.kr/school_life/">법인 소식</a></span>
+        <span class="ddd"><a href="https://gschool.kr/about/">거꾸로캠퍼스 소개</a></span>
  
+<!-- <p class="item"><a href="https://www.google.co.kr/">PROFILE</a></p> -->
+
         <button class ="logo">입학 상담 및 지원</button>
 </div>
 
@@ -106,16 +144,20 @@ a{
   </iframe>        
 </div>
 
+<span><center><br></center></span>
+
 <p><H2><center>새로운 시대를 열어갈 다음 세대를 위한 새로운 학교</center></H2></p>
 <span><center>사단법인 교육실험실21의 거꾸로캠퍼스는 21세기 학습자를 위한 미래 역량 중심 교육을 제공하는 실험 학교입니다.</center></span>
 <span><center>미래 사회에서 주체적인 삶을 살며 협력을 통해 긍정적인 변화를 이끄는 인재를 양성합니다.</center></span>
+<span><center><br></center></span>
+<span><center><br></center></span>
+<span><center><br></center></span>
+<span><center><br></center></span>
 
-<div class="box123">
-
-<strong>배움의 원칙</strong>
-
-<a class="box">거꾸로캠퍼스가 실현하는<br>21세기 배움의 원칙 아홉 가지
-</a>
+<div class="box">
+     <div class="inbox"><br> 배움의 원칙 <br>거꾸로캠퍼스가 실현하는 <br>21세기 배움의 원칙 아홉 가지 <br> <br> <br> <br> <br> <br> 자세히보기</div>
+     <div class="inbox"><br> 교육과정 <br>거꾸로캠퍼스의 교육과정과 <br>교육 프로그램에 대한 안내 <br> <br> <br> <br> <br> <br> 자세히보기</div>
+     <div class="inbox"><br> 학교생활 <br>거꾸로캠퍼스를 만들어가는 <br>학생과 교사의 이야기 <br> <br> <br> <br> <br> <br> 자세히보기</div>
 
 </div>
 
