@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐구활동_2</title>
+    <style>
+        #box {
+            position: absolute;
+            margin-top: 100px;
+            line-height: 200px;
+            background-color: lightpink;
+            border: 18px solid darkblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <button id="btn-left" onclick="leftmove()">왼쪽으로 이동</button>
+        <button id="btn-right" onclick="rightmove()">오른쪽으로 이동</button>
+    </div>
+    <div id="box">BOX</div>
+    <script>
+        var left = 0;
+        var right = 0;
+        function leftmove(){
+            left -= 100;
+            console.log(left);
+        }
+        function rightmove() {
+            right += 100;
+            console.log(right);
+        }
+    </script>
+</body>
+
+</html>
+
