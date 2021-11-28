@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2021/11/25 과제</title>
-<!-- 과제로 커밋남길 세가지 기능을 -->
-<!-- 1. 이해했지만 복습하고 싶은 기능  -->
-<!-- (flex개념을 다시 볼 수도 있겠죠? 이번에는 꼭 똑같이 클로닝이 아니니까 새로운 div를 추가해봐도 좋아요) -->
 <!-- 2. 이해가 잘 안되어서 직접 다시 구현해볼 기능 -->
 <!-- (폰트 적용도 이해가 잘 안되었을 수 있어요! -->
 <!-- 혹은 params를 받는 함수가 이해 안되었다면 이런 함수도 script태그에 넣어서 만들어서 버튼 클릭에 적용해 볼 수 있겠죠) -->
@@ -15,7 +12,7 @@
 <!-- (query selector로 특정 텍스트 컬러 바꿔보기) -->
 </head>
 <body>
-    <!-- 1. 이해했지만 복습하고 싶은 기능 -->
+    <!-- 1. 이해했지만 복습하고 싶은 기능 자바스크립트 경고창(-->
     <script type="text/JavaScript">
         fuction a( {
             alert('1');
