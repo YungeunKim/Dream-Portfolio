@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+<style>
+    #numbers{
+        overflow: scroll;
+        padding: 100px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        background-color: gray;
+        width: 1500px;
+        height: 600px;
+    }
+
+</style>
+<body>
+  <div id="numbers"></div>
+  <script>
+    var numbers = [
+      {'number': 1, 'name': 'name-1', 'id': 'id - 1'},
+      {'number': 2, 'name': 'name-2', 'id': 'id - 2'},
+      {'number': 3, 'name': 'name-3', 'id': 'id - 3'},
+      {'number': 4, 'name': 'name-4', 'id': 'id - 4'},
+      {'number': 5, 'name': 'name-5', 'id': 'id - 5'},
+      {'number': 6, 'name': 'name-6', 'id': 'id - 6'},
+      {'number': 7, 'name': 'name-7', 'id': 'id - 7'},
+      {'number': 8, 'name': 'name-8', 'id': 'id - 8'},
+      {'number': 9, 'name': 'name-9', 'id': 'id - 9'},
+    ]
+
+    for (var i in numbers) {
+      console.log(numbers[i])
+      // 1. H1 태그를 만든다
+      var _card = document.createElement("div")
+      var _id = document.createElement("div")
+      var _name = document.createElement("div")
+      var _number = document.createElement("div")
+
+      _card.className = "card"
+      _id.className = "id"
+      _name.className = "name"
+      _number.className = "number"
+
+      _card.appendChild(_id)
+      _card.appendChild(_name)
+      _card.appendChild(_number)
+
+      // 2. 태그에 numbers[i] 문자를 입력한다
+      _id.textContent = numbers[i].id
+      _name.textContent = numbers[i].name
+      _number.textContent = numbers[i].number
+      // 3. #numbers 1번에서 만든 태그를 추가한다
+      document.getElementById('numbers').appendChild(_card)
+    }
+  </script>
+</body>
+
+</html>
