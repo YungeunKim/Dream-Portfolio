@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM_YUNGEUN PORTFOLIO</title>
+
     <style>@font-face {
         font-family: 'Eulyoo1945-Regular';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
@@ -12,12 +13,12 @@
         font-style: normal;
     }
     
-
        p {
            font-size: 20px;
        }
 
         a { 
+            text-align: center;
             text-decoration:none;
             color:white; }
 
@@ -26,6 +27,7 @@
         }
 
         .menubar {
+            height: 70px;
             background-color:gray;
             display: flex;
             flex-direction: row;
@@ -43,12 +45,34 @@
         }
 
         .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex: 0.5;
         }
 
         h2 {
             color:white;
         } 
+
+        .menubar {
+        display: flex;
+        height: 200;
+    }
+
+    .item {
+        font-display: center;
+        background: gray;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .menubar-active {
+        background: black;
+    }
 
         /* {
             background-image : url('');
@@ -59,20 +83,34 @@
 </head>
 <body>
     
-    <div class="menubar">
+    <nav class="menubar">
 
-            <h2 class="LOGO">KIM_YUNGEUN</h2>
+            <h2 class="LOGO"><strong>KIM_YUNGEUN</strong></h2>
 
-            <p class="item"><a href="https://www.google.co.kr/">PROFILE</a></p>
+            <p class="item"><a href="#">PROFILE</a></p>
 
-            <p class="item"><a href="https://www.naver.co.kr/">PROJECT</a></p>
+            <p class="item"><a href="#">PROJECT</a></p>
 
-            <p class="item"><a href="https://www.naver.co.kr/">READING</a></p>
+            <p class="item"><a href="#">READING</a></p>
 
-            <p class="item"><a href="https://www.naver.co.kr/">PHOTO</a></p>
+            <p class="item"><a href="#">PHOTO</a></p>
+    </nav>
 
+    <script>
+        var item = document.querySelectorAll('.item');
 
-    </div>
+        console.log(item)
+        function clickMenuHandler() {
+            for (var i = 0; i < item.length; i++) {
+            item[i].classList.remove('menubar-active');
+        }
+        this.classList.add('menubar-active');
+    }
+
+        for (var i = 0; i < item.length; i++) {
+            item[i].addEventListener('click', clickMenuHandler);
+        }
+    </script>
 
     <!-- <center><img src="./mainpicture.png"style="width:1800px; height:900px;"/></center> -->
     
