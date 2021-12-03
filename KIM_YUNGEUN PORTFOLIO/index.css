@@ -1,0 +1,58 @@
+p {
+    font-size: 20px;
+}
+
+a { 
+    text-align: center;
+    text-decoration:none;
+    color:white; }
+
+body { 
+    margin: 0; 
+}
+
+.menubar {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.LOGO {
+    flex: 4;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.LOGO {
+    font-family:'Prata', serif;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+}
+
+.item a:hover { 
+    color: darkgray;
+}
+
+h2 {
+    color:white;
+} 
+
+.menubar {
+display: flex;
+height: 200;
+}
+
+
+
+    /* {
+        background-image : url('');
+
+    } */
+

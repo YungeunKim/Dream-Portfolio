@@ -5,81 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM_YUNGEUN PORTFOLIO</title>
-
-    <style>@font-face {
-        font-family: 'Eulyoo1945-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-       p {
-           font-size: 20px;
-       }
-
-        a { 
-            text-align: center;
-            text-decoration:none;
-            color:white; }
-
-        body { 
-            margin: 0; 
-        }
-
-        .menubar {
-            height: 70px;
-            background-color:gray;
-            display: flex;
-            flex-direction: row;
-            
-        }
-
-        .LOGO {
-            flex: 4;
-            margin-right: 30px;
-            margin-left: 30px;
-        }
-
-        .LOGO {
-            font-family:'Eulyoo1945-Regular';
-        }
-
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 0.5;
-        }
-
-        h2 {
-            color:white;
-        } 
-
-        .menubar {
-        display: flex;
-        height: 200;
-    }
-
-    .item {
-        font-display: center;
-        background: gray;
-        color: white;
-        padding: 5px;
-        margin: 5px;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    .menubar-active {
-        background: black;
-    }
-
-        /* {
-            background-image : url('');
-
-        } */
-
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
@@ -95,22 +21,6 @@
 
             <p class="item"><a href="#">PHOTO</a></p>
     </nav>
-
-    <script>
-        var item = document.querySelectorAll('.item');
-
-        console.log(item)
-        function clickMenuHandler() {
-            for (var i = 0; i < item.length; i++) {
-            item[i].classList.remove('menubar-active');
-        }
-        this.classList.add('menubar-active');
-    }
-
-        for (var i = 0; i < item.length; i++) {
-            item[i].addEventListener('click', clickMenuHandler);
-        }
-    </script>
 
     <!-- <center><img src="./mainpicture.png"style="width:1800px; height:900px;"/></center> -->
     
