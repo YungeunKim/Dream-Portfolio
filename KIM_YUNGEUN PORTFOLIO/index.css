@@ -8,6 +8,10 @@ a {
     color:white; 
 }
 
+h2{
+    font-size:x-large; 
+}
+
 body { 
     margin: 0; 
 }
@@ -24,17 +28,18 @@ body {
     flex: 4;
     margin-right: 30px;
     margin-left: 30px;
+    margin-top: 19px;
 }
 
 .LOGO {
-    font-family:'Prata', serif;
+    font-family:'Osaka';
 }
 
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0.5;
+    flex: 0.4;
 }
 
 .item a:hover { 
