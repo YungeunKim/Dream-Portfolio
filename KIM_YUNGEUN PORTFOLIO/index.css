@@ -1,3 +1,5 @@
+/* 메인페이지 상단 바 */
+
 p {
     font-size: 20px;
 }
@@ -90,3 +92,12 @@ section input[id="slide"] {
     padding: 50px;
     cursor:pointer;
 }
+.section [id="slide01"]:checked ~ .slidwrap  .slidlist > li {transform: translateX(0%);}
+.section [id="slide02"]:checked ~ .slidwrap  .slidlist > li {transform: translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidwrap  .slidlist > li {transform: translateX(-200%);}
+
+.section  .slide-control [class="control"] {display: none;}
+.section [id="slide01"]:checked ~ .slidwrap   .control01 {display: block;}
+.section [id="slide02"]:checked ~ .slidwrap   .control02 {display: block;}
+.section [id="slide03"]:checked ~ .slidwrap   .control03 {display: block;}
+

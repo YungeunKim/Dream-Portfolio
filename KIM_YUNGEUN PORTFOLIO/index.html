@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM_YUNGEUN PORTFOLIO</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="scriptsheet" href="index.js">
 </head>
 <body>
     
+    <!-- 메인 페이지 상단바 -->
+
     <nav class="menubar">
 
             <h2 class="LOGO"><strong>KIM_YUNGEUN</strong></h2>
@@ -23,35 +24,53 @@
             <p class="item"><a href="#">PHOTO</a></p>
     </nav>
 
-    <div class ="mainpic">
+    <!-- 메인페이지 슬라이드 사진 -->
+
+    <div class ="section">
         <input type="radio" name="slide" id="slide01" checked>
         <input type="radio" name="slide" id="slide02">
         <input type="radio" name="slide" id="slide03">
 
-        <div class="slidewrap"> </div>
+        <div class="slidewrap">
             <ul class="slidelist">
                 <li>
                     <a>
-                        <1abel for="slide03" class="left"></1abel>
+                        <label for="slide03" class="left"></label>
                         <img src="../Picture/지구.png">
-                        <1abel for="slide02" class="right"></1abel>
+                        <label for="slide02" class="right"></label>
                     </a>
                 </li>
                 <li>
                     <a>
-                        <1abel for="slide01" class="left"></1abel>
-                        <img src="../Picture/숲.png">
-                        <1abel for="slide03" class="right"></1abel>
+                        <label for="slide01" class="left"></label>
+                        <img src="../Picture/숲.jpg">
+                        <label for="slide03" class="right"></label>
                     </a>
                 </li>
                 <li>
                     <a>
-                        <1abel for="slide02" class="left"></1abel>
-                        <img src="../Picture/빙하.png">
-                        <1abel for="slide01" class="right"></1abel>
+                        <label for="slide02" class="left"></label>
+                        <img src="../Picture/빙하.jpg">
+                        <label for="slide01" class="right"></label>
                     </a>
                 </li>
-            </ul>
-    </div> 
+            </ul> 
+                
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide03" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                    </div>
+                </div>
+        </div> 
+    </div>
 </body>
 </html>
