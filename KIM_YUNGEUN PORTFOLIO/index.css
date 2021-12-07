@@ -55,10 +55,38 @@ display: flex;
 height: 200;
 }
 
+/* 메인 이미지 슬라이딩 */
 
-
-    /* {
-        background-image : url('');
-
-    } */
-
+section input[id="slide"] {
+    display:none;
+}
+.section  .slidwrap {
+    max-width: 1200px;
+    margin:0 auto;
+    overflow:hidden
+}
+.section   .slidlist {
+    white-space:nowrap;
+    font-size: 0;
+}
+.section   .slidlist >  li {
+    display: inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+}
+.section   .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section   .slidelist > li > a img {
+    width: 100%;
+}
+.section   .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor:pointer;
+}
