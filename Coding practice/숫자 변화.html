@@ -6,30 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>숫자 변화</title>
 </head>
-<style>
-    .value {
-        margin-top: 5rem;
-        font-size: 7rem;
-        font-weight: 100;
-        text-align: center;
-    }
-</style>
+    <style>
+       .kirby {
+           display: flex;
+           flex-direction: center;
+           /* : center; */
+           width: 200px;
+           height: 250px;
+           margin-top: 700px;
+           margin-left: 400px;
+           margin-right: 100px;
+       }
+   
+       .value {
+           margin-top: 5rem;
+           font-size: 7rem;
+           font-weight: 100;
+           text-align: center;
+           margin-top: -500px;
+           
+       }
+    </style>
+</head>
 
 <body>
+    <img class="kirby" src="../Picture/커비.png" alt="공중부양하는 커비">
     <div class="value">requestAnimationFrame</div>
 
     <script>
-        const value = document.querySelector('.value')
+        const kirby = document.querySelector('.kirby');
+        const value = document.querySelector('.value');
         let yPos = 0;
+        let refId;
 
         function render() {
             value.innerHTML = yPos;
-            yPos++;
+            kirby.style.transform = `translateY(${-yPos}px)`;
+            yPos += 10
 
-            requestAnimationFrame(render);
+            rafId = requestAnimationFrame(render);
         }
 
         render();
+
+        window.addEventListener('click', () => {
+            cancelAnimationFrame(rafId);
+        });
     </script>
+
 </body>
 </html>
