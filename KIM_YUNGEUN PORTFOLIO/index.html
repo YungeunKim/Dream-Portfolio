@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="scriptsheet" href="index.js">
 </head>
-<body>
+<body div style="margin: 0;">
     
     <!-- 메인 페이지 상단바 -->
 
@@ -27,81 +27,42 @@
 
     <!-- 메인페이지 슬라이드 사진 -->
 
-    <!-- <div class ="section">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02">
-        <input type="radio" name="slide" id="slide03">
+    <div class="s3">
+        <img class="slide1" src="../Picture/지구.png">
+            <div class="stext">
+                <h1>KIM_YUNGEUN</h1>
+            </div>
+        <img class="slide1" src="../Picture/숲.png">
+            <div class="stext">
+                <h1>KIM_YUNGEUN</h1>
+            </div>
+        <img class="slide1" src="../Picture/빙하.png">
+            <div class="stext">
+                <h1>KIM_YUNGEUN</h1>
+            </div>
+    </div>
 
-        <div class="slidewrap">
-            <ul class="slidelist">
-                <li>
-                    <a>
-                        <label for="slide03" class="left"></label>
-                        <img src="../Picture/지구.png">
-                        <label for="slide02" class="right"></label>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <label for="slide01" class="left"></label>
-                        <img src="../Picture/숲.png">
-                        <label for="slide03" class="right"></label>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <label for="slide02" class="left"></label>
-                        <img src="../Picture/빙하.jpg">
-                        <label for="slide01" class="right"></label>
-                    </a>
-                </li>
-            </ul> 
-                
-                <div class="slide-control">
-                    <div class="control01">
-                        <label for="slide03" class="left"></label>
-                        <label for="slide02" class="right"></label>
-                    </div>
-                    <div class="control02">
-                        <label for="slide01" class="left"></label>
-                        <label for="slide03" class="right"></label>
-                    </div>
-                    <div class="control03">
-                        <label for="slide02" class="left"></label>
-                        <label for="slide01" class="right"></label>
-                    </div>
-                </div>
-        </div> 
-    </div> -->
+    <script>
+        var index = 0;   //이미지에 접근하는 인덱스
+        window.onload = function(){
+            slideShow();
+        }
+        
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 추가
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";   //처음에 전부 display를 none
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;  //인덱스가 초과되면 1로 변경
+        }   
+        x[index-1].style.display = "block";  //해당 인덱스는 block으로
+        setTimeout(slideShow, 3500);   //3.5초 후 넘어가기
+    }
+    </script>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="../Picture/지구.png" style="width:100%;">
-          <div class="text">Caption One</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="../Picture/숲.png"> style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="../Picture/빙하.jpg"> style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
 
 </body>
 </html>
