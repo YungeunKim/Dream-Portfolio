@@ -12,23 +12,23 @@
     
     <!-- 메인 페이지 상단바 -->
 
-    <nav class="menubar">
+    <div class="menubar">
 
             <h2 class="LOGO"><strong>KIM_YUNGEUN</strong></h2>
 
-            <p class="item"><a href="#">PROFILE</a></p>
+            <p class="item"><a href="#">ABOUT ME</a></p>
 
             <p class="item"><a href="#">PROJECT</a></p>
 
             <p class="item"><a href="#">READING</a></p>
 
             <p class="item"><a href="#">PHOTO</a></p>
-    </nav>
+    </div>
 
     <!-- 메인페이지 슬라이드 사진 -->
 
     <div class="s3">
-        <img class="slide1" src="../Picture/지구.png">
+        <img class="slide1" src="../Picture/지구2.png">
             <div class="stext">
                 <h1>KIM_YUNGEUN</h1>
             </div>
@@ -42,26 +42,7 @@
             </div>
     </div>
 
-    <script>
-        var index = 0;   //이미지에 접근하는 인덱스
-        window.onload = function(){
-            slideShow();
-        }
-        
-        function slideShow() {
-        var i;
-        var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 추가
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";   //처음에 전부 display를 none
-        }
-        index++;
-        if (index > x.length) {
-            index = 1;  //인덱스가 초과되면 1로 변경
-        }   
-        x[index-1].style.display = "block";  //해당 인덱스는 block으로
-        setTimeout(slideShow, 3500);   //3.5초 후 넘어가기
-    }
-    </script>
+    <script src="index.js"></script>
 
 
 </body>
