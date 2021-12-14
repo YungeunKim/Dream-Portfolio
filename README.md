@@ -42,7 +42,9 @@
 |:-----:|:----|
 <img width="470" alt="스크린샷 2021-12-15 08 45 54" src="https://user-images.githubusercontent.com/94329543/146097095-68dbbb4e-cadf-48da-b73e-b39b758720bb.png">
 
-|<img src="https://media.giphy.com/media/QHi2ABdgVFYzxLLmjZ/giphy.gif" width= 300> | <h2>Login </h2> <br> 더 나은 레이아웃을 위해 로그인 버튼을 누르면 애니메이션과 함께 아이디, 비밀번호 란이 보여집니다. <br> 아이디 혹은 비밀번호를 적지 않았거나 옳지 않은 값이 들어간다면 빨간 경고 글씨가 띄워집니다. |
+<img width="503" alt="스크린샷 2021-12-15 08 51 25" src="https://user-images.githubusercontent.com/94329543/146097570-07eb72ad-59c6-4432-b0de-bd4a41089893.png">
+
+
 
 <div align="center">
 
