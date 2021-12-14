@@ -44,6 +44,8 @@
 
 <img width="503" alt="스크린샷 2021-12-15 08 51 25" src="https://user-images.githubusercontent.com/94329543/146097570-07eb72ad-59c6-4432-b0de-bd4a41089893.png">
 
+<img width="509" alt="스크린샷 2021-12-15 08 51 39" src="https://user-images.githubusercontent.com/94329543/146097598-dbb41ff7-3021-43cb-bc30-600a5dd7abf1.png">
+
 
 
 <div align="center">
