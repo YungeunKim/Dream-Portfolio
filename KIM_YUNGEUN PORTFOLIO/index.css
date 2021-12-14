@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 메인페이지 상단 바 */
 
 p {
@@ -17,10 +24,6 @@ h2{
 body { 
     margin: 0; 
 }
-
-/* .container {
-    
-} */
 
 .menubar {
     height: 70px;
@@ -64,30 +67,56 @@ position: relative;
 
 /* 메인 이미지 슬라이딩 */
 
-.slide1 {
-  width: 100%;
-}
+body { padding: 0px; margin: 0px; }
+      .jb-box { width: 100%; height: 836px; overflow: hidden;margin: 0px auto; position: relative; }
+      video { width: 100%; }
 
-.s3 {
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  height: 836px;
-  overflow: hidden;
-}
+      /* 이미지 위 텍스트 작성 */
+      .jb-text { position: absolute; top:45%; width: 100%; }
+      .jb-text p { margin-top: -24px; text-align: center; font-size: 100px; font-family: 'SF_HambakSnow'; color: #ffffff; }
 
-/* 이미지 위 텍스트 추가 */
-
-.slide1 {
-  position: relative;
-}
-
-.stext {
-  font-size: 45pt;
-  color: white;
-  position:absolute;
-  top:300px;
-  left:475px;
-  font-family: Osaka;
-  
-}
+/* 스크롤 유도 표기 */
+oneclick {
+    padding-top: 70px;
+  }
+  oneclick span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% { 
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }

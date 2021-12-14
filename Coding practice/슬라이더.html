@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이더 제작 다시</title>
+
+    <style>
+        .container {
+            width: 300vw;
+            transition: transform 0.5s;
+        }   
+        .inner {
+            width: 100vw;
+            float: left;
+        }
+        .inner img {
+            width: 100%
+        }
+    </style>
+
+</head>
+<body style="margin: o;">
+    
+    <div style="overflow: hidden">
+        <div class="container">
+            <div class="inner">
+                <img src="../Picture/지구2.png">
+            </div>
+            <div class="inner">
+                <img src="../Picture/숲.png">
+            </div>
+            <div class="inner">
+                <img src="../Picture/빙하.png">
+            </div>
+        </div> 
+    </div>
+
+    <button class="버튼1">1</button>
+    <button class="버튼2">2</button>
+    <button class="버튼3">3</button>
+
+
+    <script>
+
+        document.querySelector('.버튼2') .addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translate(-100vw)';
+        })
+
+        document.querySelector('.버튼3') .addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translate(-200vw)';
+        })
+
+        document.querySelector('.버튼1') .addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translate(0vw)';
+        })
+
+    </script>
+
+</body>
+</html>
