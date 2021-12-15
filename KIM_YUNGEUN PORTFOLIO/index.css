@@ -9,6 +9,7 @@
 
 p {
     font-size: 20px;
+    font-weight: 400;
 }
 
 a { 
@@ -24,13 +25,17 @@ h2{
 body { 
     margin: 0; 
 }
-
+.section  {
+  position: relative;
+}
 .menubar {
+  z-index: 100;
     height: 70px;
     background-color: black;
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 .LOGO {
@@ -38,10 +43,8 @@ body {
     margin-right: 30px;
     margin-left: 30px;
     margin-top: 19px;
-}
-
-.LOGO {
     font-family:'Osaka';
+    font-weight:normal
 }
 
 .item {
@@ -59,16 +62,14 @@ h2 {
     color:white;
 } 
 
-.menubar {
-display: flex;
-width: 100%;
-position: relative;
-}
 
 /* 메인 이미지 슬라이딩 */
 
 body { padding: 0px; margin: 0px; }
-      .jb-box { width: 100%; height: 836px; overflow: hidden;margin: 0px auto; position: relative; }
+      .jb-box { 
+        width: 100%; height: 905.5px; overflow: hidden; margin: 0px auto; position: relative; 
+        z-index: -2;
+      }
       video { width: 100%; }
 
       /* 이미지 위 텍스트 작성 */
@@ -76,12 +77,10 @@ body { padding: 0px; margin: 0px; }
       .jb-text p { margin-top: -24px; text-align: center; font-size: 100px; font-family: 'SF_HambakSnow'; color: #ffffff; }
 
 /* 스크롤 유도 표기 */
-oneclick {
-    padding-top: 70px;
-  }
-  oneclick span {
+
+  .oneclick span {
     position: absolute;
-    top: 0;
+    margin-top: -120px;
     left: 50%;
     width: 24px;
     height: 24px;
@@ -90,10 +89,19 @@ oneclick {
     border-bottom: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    box-sizing: border-box;
     -webkit-animation: sdb 1.5s infinite;
     animation: sdb 1.5s infinite;
-    box-sizing: border-box;
   }
+
+  .oneclick p {
+    margin: 0;
+    margin-top : -50px;
+    color: white;
+    font-size: x-large;
+    font-weight: lighter;
+  }
+
   @-webkit-keyframes sdb {
     0% {
       -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -120,3 +128,23 @@ oneclick {
       opacity: 0;
     }
   }
+
+/* ABOUTME 작성 */
+
+.aboutme {
+  font-size: 40px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.aline {
+  margin-top: 10px;
+  height: 5px;
+  width: 200px;
+  background-color: black;
+}
+
+#about{
+  margin-top: 100px;
+}
