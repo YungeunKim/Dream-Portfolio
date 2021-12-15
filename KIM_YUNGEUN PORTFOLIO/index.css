@@ -73,7 +73,7 @@ body { padding: 0px; margin: 0px; }
       video { width: 100%; }
 
       /* 이미지 위 텍스트 작성 */
-      .jb-text { position: absolute; top:45%; width: 100%; }
+      .jb-text { position: absolute; top:50%; width: 100%; }
       .jb-text p { margin-top: -24px; text-align: center; font-size: 100px; font-family: 'SF_HambakSnow'; color: #ffffff; }
 
 /* 스크롤 유도 표기 */
