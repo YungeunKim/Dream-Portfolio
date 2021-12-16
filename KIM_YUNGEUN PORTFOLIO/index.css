@@ -131,20 +131,97 @@ body { padding: 0px; margin: 0px; }
 
 /* ABOUTME 작성 */
 
+/* ABOUT ME */
+
 .aboutme {
+position: relative;
+align-items: center;
+justify-content: center;
+width: 252px;
+height: 60px;
+left: 738px;
+top: 180px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 59px;
+color: #000000;
+}
+
+.aline1 {
+position: absolute;
+width: 205px;
+height: 3px;
+left: 50%;
+top: 5px;
+transform: translate(-50%, -50%);
+background: #000000;
+}
+
+.aline2 {
+position: relative;
+width: 205px;
+height: 3px;
+left: 41%;
+top: -30px;
+transform: translate(-50%, -50%);
+background: #000000;
+}
+
+/* ABOUT ME 아래 문장  */
+
+.result {
+position: absolute;
+width: 1287px;
+height: 300px;
+left: 50%;
+top: 300px;
+transform: translate(-50%, -50%);
+font-weight: bold;
+font-size: 40px;
+color: black;
+}
+
+.me {
+  position: absolute;
+  width: 1287px;
+  height: 300px;
+  left: 26%;
+  top: 355px;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
   font-size: 40px;
   color: black;
-  align-items: center;
-  justify-content: center;
+  }
+
+h3 {
+  position: absolute;
+  width: 1287px;
+  height: 300px;
+  left: -81%;
+  top: 470px;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  font-size:20px;
+  color: black;
+  font-size: xx-large;
 }
 
-.aline {
-  margin-top: 10px;
-  height: 5px;
-  width: 200px;
-  background-color: black;
+h3{
+  color: black;
+  display:inline-block; 
+  margin: 0;
+  text-transform: uppercase;}
+h3:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #ea2129;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
 }
 
-#about{
-  margin-top: 100px;
-}
+h1:hover:after { transform: scaleX(1); }
+h1.fromRight:after{ transform-origin:100% 50%; }
+h1.fromLeft:after{  transform-origin:  0% 50%; }
+
