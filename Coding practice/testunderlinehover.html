@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
+        .to-right-underline{
+          position: relative;
+        }
+        .to-right-underline:after{
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          width: 0px;
+          height: 2px;
+          margin: 5px 0 0;
+          transition: all 0.2s ease-in-out;
+          transition-duration: 0.3s;
+          opacity: 0;
+          background-color: #8fd3f4;
+        }
+        .to-right-underline:hover:after{
+          width: 100%;
+          opacity: 1;
+        }
+        
+        /*왼쪽에서 오른쪽으로 이동하는 에니메이션:끝*/
+
+    </style>
+</head>
+<body>
+    Result Skip Results Iframe
+EDIT ON
+<p><span class="to-right-underline">왼쪽에서 오른쪽으로 이동하는 에니메이션</span></p>
+</body>
+</html>
