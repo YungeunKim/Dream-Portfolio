@@ -129,8 +129,6 @@ body { padding: 0px; margin: 0px; }
     }
   }
 
-/* ABOUTME 작성 */
-
 /* ABOUT ME */
 
 .aboutme {
@@ -164,7 +162,7 @@ position: relative;
 width: 205px;
 height: 3px;
 left: 41%;
-top: -30px;
+top: -10px;
 transform: translate(-50%, -50%);
 background: #000000;
 }
@@ -187,67 +185,143 @@ color: black;
   position: absolute;
   width: 1287px;
   height: 300px;
-  left: 26%;
-  top: 355px;
+  left: 160px;
+  top: 380px;
   transform: translate(-50%, -50%);
   font-weight: 400;
   font-size: 40px;
   color: black;
   }
 
-.span {
-  position: absolute;
-  width: 1287px;
-  height: 300px;
-  left: -81%;
-  top: 470px;
+
+/* 더 알아보기 호버 밑줄 기능 추가 */
+
+.formleft {
+  position: relative;
+  left: -150px;
+  top: 340px;
   transform: translate(-50%, -50%);
   font-weight: lighter;
-  font-size:20px;
   color: black;
-  font-size: xx-large;
-  border-bottom: solid 3px #ea2129;
-  text-decoration: underline;
+  font-size: 25px;
 } 
 
-
-/* h3{
-  color: black;
-  display:inline-block; 
-  margin: 0;
-  text-transform: uppercase;}
-h3:hover{
-  display:block;
-  content: '';
-  border-bottom: solid 3px #ea2129;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
-}
-
-h1:hover:after { transform: scaleX(1); }
-h1.fromRight:after{ transform-origin:100% 50%; }
-h1.fromLeft:after{  transform-origin:  0% 50%; } */
-
-/*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
-.to-right-underline{
-  position: relative;
-}
-.to-right-underline:after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 0px;
-  height: 2px;
-  margin: 5px 0 0;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.3s;
+.button-container {
+  position:relative;
+  width: 120px;
+  height: 60px;
   opacity: 0;
-  background-color: #8fd3f4;
-}
-.to-right-underline:hover:after{
-  width: 100%;
-  opacity: 1;
+  animation: fade-in 2s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
-/*왼쪽에서 오른쪽으로 이동하는 에니메이션:끝*/
+.button-container:not(:hover) > .under-line {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0; 
+  animation: out 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.button-container:hover > .under-line {
+  width: 100%;
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0; 
+  animation: in 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    }
+  }
+  
+
+@keyframes in{
+0%{
+  width: 0%;
+  }
+100%{
+  width: 100%;
+  }
+}
+
+@keyframes out{
+  0%{
+    width: 100%;
+    }
+  100%{
+    width: 0%;
+    }
+  }
+  
+/* Reading Text*/
+
+.reading {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 60px;
+  left: 738px;
+  top: -50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 59px;
+  color: white;
+  }
+
+  .aline3 {
+  position: relative;
+  width: 168px;
+  height: 3px;
+  left: 865px;
+  top: -105px;
+  transform: translate(-50%, -50%);
+  background: white;
+  }
+
+  .aline4 {
+  position: relative;
+  width: 168px;
+  height: 3px;
+  left: 865px;
+  top: -65px;
+  transform: translate(-50%, -50%);
+  background:white;
+  }
+
+  .blackbox {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    left: 0%;
+    top: 680px;
+    background-color: rgb(65, 61, 61);
+  }
+
+  /* reading introduce */
+
+  .rintroduce {
+    position: relative;
+    font-size: 14pt;
+    top: 0px;
+  }
