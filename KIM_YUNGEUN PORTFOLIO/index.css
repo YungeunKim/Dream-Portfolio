@@ -317,7 +317,7 @@ background: #000000;
     left: 0%;
     top: 680px;
     /* background-color:rgb(78, 78, 78); */
-    background-color:darkolivegreen;
+    background-color:gray;
   }
 
   /* reading introduce */
@@ -339,7 +339,7 @@ background: #000000;
     left: 9%;
     top: 300px;
     background-color: darkgray;
-    border: 3px solid black;
+    border: 3px solid white;
   }
 
   .bookbox15 {
@@ -362,7 +362,7 @@ background: #000000;
     left: 39%;
     top: 300px;
     background-color: darkgray;
-    border: 3px solid black;
+    border: 3px solid white;
   }
 
   .bookbox25 {
@@ -460,7 +460,7 @@ background: #000000;
     left: 0%;
     top: 400px;
     background-color:rgb(78, 78, 78);
-    background-color:darkolivegreen;
+    background-color:gray;
   }
 
   /* 더 알아보기 호버 밑줄 기능 추가 */
