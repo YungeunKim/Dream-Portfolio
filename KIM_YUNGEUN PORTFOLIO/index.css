@@ -279,7 +279,7 @@ background: #000000;
     width: 252px;
     height: 40px;
     left: 770px;
-    top: -100px;
+    top: -200px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -295,8 +295,7 @@ background: #000000;
     width: 168px;
     height: 3px;
     left: 812px;
-    top: -135px;
-    /* transform: translate(-50%, -50%); */
+    top: -235px;
     background: white;
   }
 
@@ -307,18 +306,18 @@ background: #000000;
     width: 168px;
     height: 3px;
     left: 812px;
-    top: -100px;
-    /* transform: translate(-50%, -50%); */
-    background:white;
+    top: -200px;
+    background: white;
   }
 
   .blackbox {
     position: relative;
     width: 100%;
-    height: 850px;
+    height: 1000px;
     left: 0%;
     top: 680px;
-    background-color:rgb(141, 141, 141);
+    /* background-color:rgb(78, 78, 78); */
+    background-color:darkolivegreen;
   }
 
   /* reading introduce */
@@ -328,7 +327,9 @@ background: #000000;
     justify-content: center;
     align-items: center;
     font-size: 14pt;
-    top: -50px;
+    top: -150px;
+    font-size: 17pt;
+    color:white;
   }
 
   .bookbox1 {
@@ -337,8 +338,8 @@ background: #000000;
     height: 280px;
     left: 9%;
     top: 300px;
-    background-color: rgb(85, 84, 84);
-    border: 3px solid white;
+    background-color: darkgray;
+    border: 3px solid black;
   }
 
   .bookbox15 {
@@ -360,8 +361,8 @@ background: #000000;
     height: 280px;
     left: 39%;
     top: 300px;
-    background-color: rgb(85, 84, 84);
-    border: 3px solid white;
+    background-color: darkgray;
+    border: 3px solid black;
   }
 
   .bookbox25 {
@@ -381,8 +382,8 @@ background: #000000;
     height: 280px;
     left: 69%;
     top: 300px;
-    background-color: rgb(85, 84, 84);
-    border: 3px solid white;
+    background-color: darkgray;
+    border: 3px solid black;
   }
 
   .bookbox35 {
@@ -391,5 +392,150 @@ background: #000000;
     height: 264px;
     left: 69.5%;
     top: 310px;
+    background-color:white;
+  }
+
+  .bookbox4 {
+    position:absolute;
+    width: 400px;
+    height: 280px;
+    left: 9%;
+    top: 2255px;
+    background-color: darkgray;
+    border: 3px solid black;
+  }
+
+  .bookbox45 {
+    position:absolute;
+    width: 184px;
+    height: 264px;
+    left: 9.5%;
+    top: 2265px;
     background-color: white;
   }
+
+  .bookbox5 {
+    position:absolute;
+    width: 400px;
+    height: 280px;
+    left: 39%;
+    top: 2255px;
+    background-color: darkgray;
+    border: 3px solid black;
+  }
+
+  .bookbox55 {
+    position:absolute;
+    width: 184px;
+    height: 264px;
+    left: 39.5%;
+    top: 2265px;
+    background-color: white;
+  }
+
+  .bookbox6 {
+    position:absolute;
+    width: 400px;
+    height: 280px;
+    left: 69%;
+    top: 2255px;
+    background-color: darkgray ;
+    border: 3px solid black;
+  }
+
+  .bookbox65 {
+    position:absolute;
+    width: 184px;
+    height: 264px;
+    left: 69.5%;
+    top: 2265px;
+    background-color:white;
+  }
+
+  .blackbox2 {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 250px;
+    left: 0%;
+    top: 400px;
+    background-color:rgb(78, 78, 78);
+    background-color:darkolivegreen;
+  }
+
+  /* 더 알아보기 호버 밑줄 기능 추가 */
+
+.formleft2 {
+  position: relative;
+  left: -150px;
+  top: -100px;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  color: black;
+  font-size: 25px;
+} 
+
+.button-container2 {
+  position:relative;
+  width: 120px;
+  height: 60px;
+  opacity: 0;
+  animation: fade-in 2s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.button-container2:not(:hover) > .under-line2 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0; 
+  animation: out 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.button-container2.aboutme > .under-line2 {
+  width: 100%;
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0; 
+  animation: in 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    }
+  }
+  
+
+@keyframes in{
+0%{
+  width: 0%;
+  }
+100%{
+  width: 100%;
+  }
+}
+
+@keyframes out{
+  0%{
+    width: 100%;
+    }
+  100%{
+    width: 0%;
+    }
+  }
+  
