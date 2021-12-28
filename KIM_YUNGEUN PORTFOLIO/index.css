@@ -69,16 +69,27 @@ body { padding: 0px; margin: 0px; }
       .jb-box { 
         width: 100%; overflow: hidden; margin: 0px auto; position: relative; 
         z-index: -2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
-      video { width: 100%; }
+      video { 
+        width: 100%; 
+        height: 906px; 
+        padding: 0;
+        margin: 0;
+        object-fit: fill;
+      }
 
       /* 이미지 위 텍스트 작성 */
-      .jb-text { top:50%; width: 100%; }
-      .jb-text p { margin-top: -24px; text-align: center; font-size: 100px; font-family: 'SF_HambakSnow'; color: #ffffff; }
+      .jb-text { position:absolute; top:50%; width: 100%; }
+      .jb-text p { margin-top: -30px; text-align: center; font-size: 100px; font-family: 'SF_HambakSnow'; color: #ffffff; }
 
 /* 스크롤 유도 표기 */
 
   .oneclick span {
+    position: absolute;
     margin-top: -120px;
     left: 50%;
     width: 24px;
@@ -134,14 +145,15 @@ body { padding: 0px; margin: 0px; }
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 252px;
-  height: 60px;
+  width: 210px;
+  height: 35px;
   margin: auto;
+  margin-top: 10%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: 59px;
+  line-height: 40px;
   color: #000000;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -155,6 +167,7 @@ body { padding: 0px; margin: 0px; }
   text-align: center;
   font-weight: bold;
   font-size: 40px;
+  margin-top: 9%;
   color: black;
 }
 
@@ -162,21 +175,37 @@ body { padding: 0px; margin: 0px; }
   text-align: center;
   font-weight: 400;
   font-size: 40px;
+  margin-top: 3%;
+  margin-left: 4%;
   color: black;
   }
 
 
 /* 더 알아보기 호버 밑줄 기능 추가 */
-
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .formleft {
   position: relative; 
-  transform: translate(-50%, -50%);
+  margin-top: 5%;
+  margin-left: -38%;
+  /* transform: translate(-50%, -50%); */
   font-weight: lighter;
+  width: 200px;
   color: black;
   font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
 } 
 
 .button-container {
+  
   position:relative;
   width: 120px;
   height: 60px;
@@ -245,7 +274,6 @@ body { padding: 0px; margin: 0px; }
     width:250px;
     height:250px;
     left: 830px;
-
     border-radius: 100%;
   }
 
@@ -262,130 +290,60 @@ body { padding: 0px; margin: 0px; }
 /* Reading Text*/
 
 .reading {
-    position: relative;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 35px;
+  margin: auto;
+  margin-top: 10%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+  .section3 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 252px;
-    height: 40px;
-    left: 770px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 59px;
-    color: black;
-  }
-
-  .aline3 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 168px;
-    height: 3px;
-    left: 812px;
-
-    background: black;
-  }
-
-  .aline4 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 168px;
-    height: 3px;
-    left: 812px;
-
-    background: black;
-  }
-
-  .blackbox {
-    position: relative;
     width: 100%;
-    left: 0%;
-
-    background-color:white;
   }
-
-  /* reading introduce */
-
-  /* .rintroduce {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 14pt;
-    top: -20px;
-    font-size: 17pt;
-    color:black;
-  } */
-
-/* bookbox1 */
 
 .book-container {
+  width: 100%;
+  margin-top: 10%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
-  width: 1190px;
-  margin: auto;
 }
+
+/* bookbox */
 
 .bookbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 230px;
   height: 330px;
   background-color: white;
   border: 2px solid black;
-  margin-right: 10px;
+  margin: 0 45px 0 45px;
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 100;
 }
 
-.bookbox1 {
-  position: relative;
-  width: 230px;
-  height: 330px;
-  left:5%;
-  background-color: white;
-  border: 2px solid black;
+.inbookbox {
+  font-size: 15pt;
 }
 
-/* bookbox2 */
-
-.bookbox2 {
-  position: relative;
-  width: 230px;
-  height: 330px;
-  left:25%;
-  background-color: white;
-  border: 2px solid black;
-}
-
-/* bookbox3 */
-
-.bookbox3 {
-  position: relative;
-  width: 230px;
-  height: 330px;
-  left:45%;
-  background-color: white;
-  border: 2px solid black;
-}
-
-/* bookbox4 */
-
-.bookbox4 {
-  position: relative;
-  width: 230px;
-  height: 330px;
-  left:65%;
-  background-color: white;
-  border: 2px solid black;
-}
-
-/* bookbox5 */
-
-.bookbox5 {
-  position: relative;
-  width: 230px;
-  height: 330px;
-  left:85%;
-  background-color: white;
-  border: 2px solid black;
-}
