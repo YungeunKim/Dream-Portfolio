@@ -180,8 +180,6 @@ body { padding: 0px; margin: 0px; }
   color: black;
   }
 
-
-/* 더 알아보기 호버 밑줄 기능 추가 */
 .section2{
   display: flex;
   flex-direction: column;
@@ -189,11 +187,13 @@ body { padding: 0px; margin: 0px; }
   justify-content: center;
   width: 100%;
 }
+
+/* 더 알아보기 호버 밑줄 기능 추가 */
+
 .formleft {
   position: relative; 
   margin-top: 5%;
   margin-left: -38%;
-  /* transform: translate(-50%, -50%); */
   font-weight: lighter;
   width: 200px;
   color: black;
@@ -266,26 +266,6 @@ body { padding: 0px; margin: 0px; }
     width: 0%;
     }
   }
-
-  /* circle */
-  #circle{
-    position: relative;
-    background-color: black;
-    width:250px;
-    height:250px;
-    left: 830px;
-    border-radius: 100%;
-  }
-
-  #circle2{
-    position: relative;
-    background-color: black;
-    width:250px;
-    height:250px;
-    left: -850px;
-    top: -750%;
-    border-radius: 100%;
-  }
   
 /* Reading Text*/
 
@@ -308,12 +288,8 @@ body { padding: 0px; margin: 0px; }
   text-align: center;
 }
 
-  .section3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.section3 {
+  height: 600px;
   }
 
 .book-container {
@@ -325,25 +301,228 @@ body { padding: 0px; margin: 0px; }
   flex-direction: row;
 }
 
-/* bookbox */
+/* 책 */
 
-.bookbox {
+.flipBoxContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 330px;
+  margin-top: 7%;
+}
+
+.flip-box {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  perspective: 1000px;
   justify-content: center;
   align-items: center;
-  position: relative;
+  margin: 45px;
+}
+
+.flip {
+  display: flex;
+  justify-content: center;
   width: 230px;
-  height: 330px;
-  background-color: white;
-  border: 2px solid black;
-  margin: 0 45px 0 45px;
-  text-align: center;
+  height: 100%;
+  position: relative;
+  color: black;
   font-size: 25pt;
   font-weight: 100;
+  line-height: 400px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: .5s;
 }
 
-.inbookbox {
-  font-size: 15pt;
+.front, .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+
 }
 
+.front {
+  background: white;
+  border: 2px solid black;
+}
+.back {
+  background: gray;
+  border: 2px solid black;
+  transform: rotateY(180deg);
+}
+
+.flip-box:hover .flip {
+  transform: rotateY(-180deg);
+}
+
+/* 더 알아보기 호버 밑줄 기능 추가2 */
+
+.formleft2 {
+  position: relative; 
+  margin-top: 5%;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: black;
+  font-size: 25px;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+} 
+
+.button-container2 {
+  position:relative;
+  width: 120px;
+  height: 60px;
+  opacity: 0;
+  animation: fade-in 2s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.button-container2:not(:hover) > .under-line2 {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;  
+  animation: out 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.button-container2:hover > .under-line2 {
+  width: 100%;
+  position: relative;
+  height: 2px;
+  background-color: black;
+  bottom: 0;   
+  animation: in 1s 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    }
+  }
+  
+
+@keyframes in{
+0%{
+  width: 0%;
+  }
+100%{
+  width: 100%;
+  }
+}
+
+@keyframes out{
+  0%{
+    width: 100%;
+    }
+  100%{
+    width: 0%;
+    }
+  }
+  
+  .section4 {
+    height: 850px;
+
+  }
+
+  .PROJECT {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 35px;
+    margin: auto;
+    margin-top: 0%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+
+  /* 프로젝트 */
+
+  .ProjectBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 440px;
+    margin-top: 7%;
+  }
+  
+  .project-box {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    perspective: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+  }
+  
+  .pm {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    position: relative;
+    color: black;
+    font-size: 25pt;
+    font-weight: 100;
+    line-height: 400px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .5s;
+  }
+  
+  .front2, .back2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front2 {
+    background: white;
+    border: 2px solid black;
+  }
+  .back2 {
+    background: gray;
+    border: 2px solid black;
+    transform: rotateY(180deg);
+  }
+  
+  .project-box:hover .pm {
+    transform: rotateY(-180deg);
+  }
