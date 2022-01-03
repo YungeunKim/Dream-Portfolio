@@ -35,7 +35,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: relative;
     width: 100%;
 }
 
@@ -63,24 +63,67 @@ h2 {
     color:white;
 }
 
-#circle1 {
-position: relative;
+/* aboutme 텍스트 */
 
-background-color:#86efef;
-width:150px;
-height:150px;
-border-radius:75px;
-text-align:center;
-margin:0 auto;
-font-size:12px;
+.aboutme {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 35px;
+  margin: auto;
+  margin-top: 5%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+/* 프로필 */
+
+#circle1 {
+position: absolute;
+background-color:white;
+width: 350px;
+height:350px;
+border-radius:100%;
+border: 2px solid black;
+/* text-align:center; */
+margin: 45% auto;
+margin-left: -250%;
 vertical-align:middle;
 line-height:150px;
+}
+
+.profile {
+  position: absolute;
+  width: 18.5vw;
+  font-weight: 300;
+  font-size: 35px;
+  margin-top: 50%;
+  margin-left: 135%;
+  color: black;
+}
+
+.job {
+  position: absolute;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 135px;
+  margin-left: 141%;
+  color: black;
 }
 
 </style>
 </head>
 <body>
-    <div class="section1">
+
+<div class="section1">
 
 <!-- 메인페이지 상단 바 -->
 
@@ -96,12 +139,15 @@ line-height:150px;
 
       <p class="item"><a href="#">PHOTO</a></p>
     </div>
+</div>
 
-    <div id="circle1">
-        원 만들기
-    </div>
+    <div class="aboutme">
+        <div class="about">ABOUT ME</div>
 
-  </div>
+    <div id="circle1">MY FACE</div>
+
+    <div class="profile">김윤근/KIM_YUNGEUN</div>
+    <div class="job">Student/2006.10.24</div>
 
 </body>
 </html>
