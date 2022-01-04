@@ -31,7 +31,7 @@ p {
     font-weight: 400;
 }
 
-a { 
+.menubar a { 
     text-align: center;
     text-decoration:none;
     color:white; 
@@ -80,7 +80,6 @@ body {
 h2 {
     color:white;
 }
-
 
 /* 메인 이미지 슬라이딩 */
 
@@ -208,6 +207,12 @@ body { padding: 0px; margin: 0px; }
 }
 
 /* 더 알아보기 호버 밑줄 기능 추가 */
+
+.formleft a { 
+  text-align: center;
+  text-decoration:none;
+  color:black; 
+}
 
 .formleft {
   position: relative; 
@@ -401,7 +406,7 @@ body { padding: 0px; margin: 0px; }
   font-size:medium;
   height: -100px;
   position: absolute;
-  left: 22.5%;
+  left: 19.5%;
   top: -4%;
 }
 
@@ -423,6 +428,12 @@ body { padding: 0px; margin: 0px; }
 
 /* 더 알아보기 호버 밑줄 기능 추가2 */
 
+.formleft2 a { 
+  text-align: center;
+  text-decoration:none;
+  color:black; 
+}
+
 .formleft2 {
   position: relative; 
   margin-top: 5%;
@@ -440,7 +451,7 @@ body { padding: 0px; margin: 0px; }
 
 .button-container2 {
   position:relative;
-  width: 120px;
+  width: 160px;
   height: 60px;
   opacity: 0;
   animation: fade-in 2s 1;
@@ -626,6 +637,12 @@ body { padding: 0px; margin: 0px; }
 
   /* 더 알아보기 호버 밑줄 기능 추가3 */
 
+  .formleft3 a { 
+    text-align: center;
+    text-decoration:none;
+    color:black; 
+  }
+
 .formleft3 {
   position: relative; 
   margin-top: 2%;
@@ -643,7 +660,7 @@ body { padding: 0px; margin: 0px; }
 
 .button-container3 {
   position:relative;
-  width: 120px;
+  width: 160px;
   height: 60px;
   opacity: 0;
   animation: fade-in 2s 1;

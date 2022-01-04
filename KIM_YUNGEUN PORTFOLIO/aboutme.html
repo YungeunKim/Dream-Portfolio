@@ -1,153 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM_YUNGEUN PORTFOLIO</title>
-<style>
-    /* 메인페이지 상단 바 */
+    <style>
+        /* 메인페이지 상단 바 */
 
-p {
-    font-size: 20px;
-    font-weight: 400;
-}
+        p {
+            font-size: 20px;
+            font-weight: 400;
+        }
 
-a { 
-    text-align: center;
-    text-decoration:none;
-    color:white; 
-}
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
 
-h2{
-    font-size:x-large; 
-}
+        h2 {
+            font-size: x-large;
+        }
 
-body {
-    margin: 0; 
-}
-.section  {
-  position: relative;
-}
-.menubar {
-  z-index: 100;
-    height: 70px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 100%;
-}
+        body {
+            margin: 0;
+        }
 
-.LOGO {
-    flex: 4;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 19px;
-    font-family:'Osaka';
-    font-weight:normal
-}
+        .section {
+            position: relative;
+        }
 
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0.4;
-}
+        .menubar {
+            z-index: 100;
+            height: 70px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            width: 100%;
+        }
 
-.item a:hover { 
-    color: darkgray;
-}
+        .LOGO {
+            flex: 4;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-top: 19px;
+            font-family: 'Osaka';
+            font-weight: normal
+        }
 
-h2 {
-    color:white;
-}
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0.4;
+        }
 
-/* aboutme 텍스트 */
+        .item a:hover {
+            color: darkgray;
+        }
 
-.aboutme {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 210px;
-  height: 35px;
-  margin: auto;
-  margin-top: 5%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  text-align: center;
-}
+        h2 {
+            color: white;
+        }
 
-/* 프로필 */
+        /* aboutme 텍스트 */
 
-#circle1 {
-position: absolute;
-background-color:white;
-width: 350px;
-height:350px;
-border-radius:100%;
-border: 2px solid black;
-/* text-align:center; */
-margin: 45% auto;
-margin-left: -250%;
-vertical-align:middle;
-line-height:150px;
-}
+        .aboutme {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 35px;
+            margin: auto;
+            margin-top: 5%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 40px;
+            color: #000000;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            text-align: center;
+        }
 
-.profile {
-  position: absolute;
-  width: 18.5vw;
-  font-weight: 300;
-  font-size: 35px;
-  margin-top: 50%;
-  margin-left: 135%;
-  color: black;
-}
+        /* 프로필 */
 
-.job {
-  position: absolute;
-  font-weight: 300;
-  font-size: 25px;
-  margin-top: 135px;
-  margin-left: 141%;
-  color: black;
-}
+        #circle1 {
+            position: absolute;
+            background-color: white;
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+            border: 2px solid black;
+            /* text-align:center; */
+            margin: 50% auto;
+            margin-left: -230%;
+            vertical-align: middle;
+            line-height: 150px;
+            overflow: hidden;
+        }
 
-</style>
+        .profile {
+            position: absolute;
+            width: 18.5vw;
+            font-weight: 300;
+            font-size: 35px;
+            margin-top: 65%;
+            margin-left: 120%;
+            color: black;
+        }
+
+        .job {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 80%;
+            margin-left: 125%;
+            color: black;
+        }
+
+        .skills {
+            position: absolute;
+            width: 18.5vw;
+            font-weight: 300;
+            font-size: 35px;
+            margin-top: 120%;
+            margin-left: 62%;
+            color: black;
+        }
+
+        .skill1 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 147.5%;
+            margin-left: 200%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill1-fill {
+            width: 15%;
+            height: 30px;
+            background-color: dodgerblue;
+        }
+
+        .skill15 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 145%;
+            margin-left: 125%;
+            color: black;
+        }
+
+        .skill3 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 170%;
+            margin-left: 200%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill3-fill {
+            width: 90%;
+            height: 30px;
+            background-color: lawngreen;
+        }
+
+        .skill35 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 170%;
+            margin-left: 125%;
+            color: black;
+        }
+
+        .skill5 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 195%;
+            margin-left: 200%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill55 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 193.5%;
+            margin-left: 125%;
+            color: black;
+        }
+
+        .skill5-fill {
+            width: 70%;
+            height: 30px;
+            background-color: rgb(8, 80, 152);
+        }
+
+        .skill2 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 147.5%;
+            margin-left: 340%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill25 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 145%;
+            margin-left: 270%;
+            color: black;
+        }
+
+        .skill2-fill {
+            width: 60%;
+            height: 30px;
+            background-color: mediumpurple;
+        }
+
+        .skill4 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 170%;
+            margin-left: 340%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill45 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 170%;
+            margin-left: 270%;
+            color: black;
+        }
+
+        .skill4-fill {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(147, 36, 20);
+        }
+
+        .skill6 {
+            position: absolute;
+            width: 110px;
+            height: 30px;
+            margin-top: 195%;
+            margin-left: 340%;
+            border-radius: 18px;
+            background-color: white;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .skill65 {
+            position: absolute;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 193.5%;
+            margin-left: 270%;
+            color: black;
+        }
+
+        .skill6-fill {
+            width: 45%;
+            height: 30px;
+            background-color: orange;
+        }
+
+        /* menubar2 하단 */
+
+        .menubar2 {
+            /* z-index: 100; */
+            height: 65px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            justify-content: left 10px;
+            top: 93%;
+            left: 0;
+        }
+
+        .contact {
+            color: white;
+            /* flex: 2; */
+            top: 20px;
+            margin-right: 30px;
+            margin-left: 5px;
+            font-family: 'Osaka';
+            font-weight: normal;
+            font-size: x-large;
+        }
+
+        .call {
+            color: white;
+            /* flex: 2; */
+            margin-left: -120px;
+            margin-top: 40px;
+            font-family: 'Osaka';
+            font-weight: normal
+        }
+
+        /* 인스타그램 로고 */
+
+        .instagram {
+            position: relative;
+            align-items: center;
+            margin-top: 1%;
+            margin-left: 60%;
+            width: 30px;
+            height: 30px;
+            background: url(../Picture/instagram.png);
+            background-size: cover;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="section1">
+    <div class="section1">
 
-<!-- 메인페이지 상단 바 -->
+        <!-- 메인페이지 상단 바 -->
 
-    <div class="menubar">
+        <div class="menubar">
 
-      <h2 class="LOGO"><a href="file:///Users/kimyungeun/Documents/GitHub/Coding/KIM_YUNGEUN%20PORTFOLIO/index.html">KYG</a></h2>
+            <h2 class="LOGO"><a
+                    href="file:///Users/kimyungeun/Documents/GitHub/Coding/KIM_YUNGEUN%20PORTFOLIO/index.html">KIM YUNGEUN</a>
+            </h2>
 
-      <p class="item"><a href="#">ABOUT ME</a></p>
+            <p class="item"><a href="file:///Users/kimyungeun/Documents/GitHub/Coding/KIM_YUNGEUN%20PORTFOLIO/aboutme.html#">ABOUT ME</a></p>
 
-      <p class="item"><a href="#">PROJECT</a></p>
+            <p class="item"><a href="file:///Users/kimyungeun/Documents/GitHub/Coding/KIM_YUNGEUN%20PORTFOLIO/reading.html">PROJECT</a></p>
 
-      <p class="item"><a href="#">READING</a></p>
+            <p class="item"><a href="#">READING</a></p>
 
-      <p class="item"><a href="#">PHOTO</a></p>
+            <p class="item"><a href="#">PHOTO</a></p>
+        </div>
     </div>
-</div>
 
     <div class="aboutme">
         <div class="about">ABOUT ME</div>
 
-    <div id="circle1">MY FACE</div>
+        <div id="circle1"><img src="../Picture/프로필.jpg" width="100%" height="100%"></div>
 
-    <div class="profile">김윤근/KIM_YUNGEUN</div>
-    <div class="job">Student/2006.10.24</div>
+        <div class="profile">김윤근/KIM_YUNGEUN</div>
+        <div class="job">Student/2006.10.24</div>
+        <div class="skills">Skills</div>
 
+        <div class="skill1">
+            <div class="skill1-fill"></div>
+        </div>
+        <div class="skill15">Photoshop</div>
+
+        <div class="skill2">
+            <div class="skill2-fill"></div>
+        </div>
+        <div class="skill25">PremierePro</div>
+
+        <div class="skill3">
+            <div class="skill3-fill"></div>
+        </div>
+        <div class="skill35">SpreadSheet</div>
+
+        <div class="skill4">
+            <div class="skill4-fill"></div>
+        </div>
+        <div class="skill45">PowerPoint</div>
+
+        <div class="skill5">
+            <div class="skill5-fill"></div>
+        </div>
+        <div class="skill55">WebCoding</div>
+
+        <div class="skill6">
+            <div class="skill6-fill"></div>
+        </div>
+        <div class="skill65">Illustrator</div>
+
+    </div>
+
+    <div class="menubar2">
+
+        <div class="contact">Contact</div>
+        <div class="call">Call : 010-3441-0799 ㅣ E-mail : kimyungeun2006@naver.com</div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/0264_dmx/"> <img src="../Picture/instagram.png" width="30px"
+                    height="30px"></a>
+        </div>
+    </div>
 </body>
+
 </html>
